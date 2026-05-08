@@ -1,8 +1,8 @@
 # VLE Test Automation Framework
 
-A beginner-friendly Selenium automation testing framework built using Java, TestNG, Maven, and Selenium WebDriver.
+Automated testing framework for the Sabaragamuwa University of Sri Lanka VLE login system using Selenium WebDriver, Java, TestNG, and Maven with Page Object Model (POM) design. 
 
-This project automates login functionality and follows a clean Page Object Model (POM) structure used in real QA industry projects.
+https://vle.sab.ac.lk/my/
 
 ---
 
