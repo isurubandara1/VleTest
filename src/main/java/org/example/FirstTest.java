@@ -13,28 +13,21 @@ public class FirstTest {
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver .get("https://vle.sab.ac.lk/login/index.php");
+        Thread.sleep(2000);
 
-        // ===== Setup =====
-//        WebDriver driver = new ChromeDriver();
-//        driver.manage().window().maximize();
-//        driver.get("https://vle.sab.ac.lk/login/index.php");
-//
-//        Thread.sleep(2000); // Page load
-//
-//        // ===== Step 1: Username Field Test =====
-//        WebElement usernameField = driver.findElement(By.id("username"));
-//
-//        // Field එක empty ද verify කරනවා
-//        String currentValue = usernameField.getAttribute("value");
-//        if (currentValue.isEmpty()) {
-//            System.out.println("✅ Username field is empty");
-//        }
-//
-//        // Field එක enabled ද?
-//        if (usernameField.isEnabled()) {
-//            System.out.println("✅ Username field is enabled");
-//            usernameField.sendKeys("test_user");
-//        }
+        // step 1: username Field Test
+        WebElement usernameField = driver.findElement(By.id("username"));
+          //test is it empty
+        String currentValue = usernameField.getAttribute("Value");
+        if(currentValue.isEmpty()){
+            System.out.println("username field is empty");
+        }
+         //field enable or not
+        if(usernameField.isEnabled()){
+            System.out.println("field is enable");
+            usernameField.sendKeys("Testuser");
+        }
+        
 //
 //        // ===== Step 2: Password Field Test =====
 //        WebElement passwordField = driver.findElement(By.id("login_password"));
