@@ -28,16 +28,16 @@ public class FirstTest {
             usernameField.sendKeys("Testuser");
         }
         
-//
-//        // ===== Step 2: Password Field Test =====
-//        WebElement passwordField = driver.findElement(By.id("login_password"));
-//
-//        // Type attribute verify කරනවා (password ද?)
-//        String fieldType = passwordField.getAttribute("type");
-//        if (fieldType.equals("password")) {
-//            System.out.println("✅ Password field is masked (secure)");
-//        }
-//
+
+        // ===== Step 2: Password Field Test =====
+        WebElement passwordField = driver.findElement(By.id("login_password"));
+
+        // Type attribute verify කරනවා (password ද?)
+        String fieldType = passwordField.getAttribute("type");
+        if (fieldType.equals("password")) {
+            System.out.println("✅ Password field is masked (secure)");
+        }
+
 //        passwordField.sendKeys("wrong_password");
 //
 //        // ===== Step 3: Login Button Test =====
