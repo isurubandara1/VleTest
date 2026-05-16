@@ -38,22 +38,22 @@ public class FirstTest {
             System.out.println("✅ Password field is masked (secure)");
         }
 
-//        passwordField.sendKeys("wrong_password");
-//
-//        // ===== Step 3: Login Button Test =====
-//        WebElement loginBtn = driver.findElement(By.id("loginbtn"));
-//
-//        // Button text verify කරනවා
-//        String btnText = loginBtn.getText();
-//        System.out.println("Button text: " + btnText); // "Log in"
-//
-//        // Button enabled ද?
-//        if (loginBtn.isEnabled()) {
-//            loginBtn.click();
-//            System.out.println("✅ Login button clicked");
-//        }
-//
-//        Thread.sleep(2000); // Wait for response
+        passwordField.sendKeys("wrong_password");
+
+        // ===== Step 3: Login Button Test =====
+        WebElement loginBtn = driver.findElement(By.id("loginbtn"));
+
+        // Button text verify කරනවා
+        String btnText = loginBtn.getText();
+        System.out.println("Button text: " + btnText); // "Log in"
+
+        // Button enabled ද?
+        if (loginBtn.isEnabled()) {
+            loginBtn.click();
+            System.out.println("✅ Login button clicked");
+        }
+
+        Thread.sleep(2000); // Wait for response
 //
 //        // ===== Step 4: Error Message Verify =====
 //        // Safe way - findElements use කරනවා
